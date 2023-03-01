@@ -1,0 +1,12 @@
+body{
+    width: 100vw;
+    height: 100vh;
+}
+.parent{
+    /* height: 40px */
+    max-width: 500px
+}
+
+.parent >*{
+    padding: 0;
+}

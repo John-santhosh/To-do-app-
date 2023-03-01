@@ -11,8 +11,24 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/style.css">
 </head>
-<body>
+<body class="bg-body-secondary  text-capitalize">
+    <section class="bg-success-subtle vw-100 vh-100 ">
+        <div class="container">
+            <h1 class="text-center text-uppercase mb-5">Add todo list</h1>
+            <div class="bg-info parent row m-auto">
+                <!-- <label for="">name</label> -->
+            <input id="parent-input" class="col-10" type="text" value="" placeholder="Add task...">
+            <button id="task-add" class="col-1">➕</button>
+            <button id="remove-taskText" class="col-1 ">❌</button>
+            <!-- <input type="text" name="" id=""> -->
+            </div>
+            
+        </div>
+    </section>
 
+
+
+    
     <!-- bootstrap js cdn  -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <script src="script/index.js"></script>
