@@ -31,6 +31,8 @@ function createTask(){
     let saveEditButton = document.createElement('button')
 
     // adding attributes and textContent to the newly created elements 
+    div.classList.add("child")
+
     input.classList.add("col-10")
     input.value=task.value
     input.disabled=true

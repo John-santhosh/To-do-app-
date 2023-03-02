@@ -6,7 +6,34 @@ body{
     /* height: 40px */
     max-width: 500px
 }
-
 .parent >*{
+    margin: 1rem auto;
+}
+
+.base >*{
     padding: 0;
+    background: #fff;
+    outline: transparent;
+    border: none;
+}
+
+#parent-input{
+    padding: 1rem !important;
+    border-radius: 2rem 0 0 2rem;
+}
+.base{
+    border-radius: 2rem;
+    overflow: hidden;
+}
+.child>*{
+    background: inherit;
+    outline: transparent;
+    border: none;
+    font-size: 1.3rem;
+    color: #000000;
+    border-bottom: 1px solid black;
+}
+#remove-taskText{
+    border-radius: 0 2rem 2rem 0;
+    padding-right: 10px;
 }
