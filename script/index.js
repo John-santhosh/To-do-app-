@@ -76,3 +76,8 @@ function createTask(){
     // clearing the text inside input field when task is added 
     clearParentText();
 }
+
+
+// let currentYear = ;
+let footer = document.querySelector('footer p')
+footer.innerHTML = `Copyright &copy; ${new Date().getFullYear()} John santhosh`;

@@ -1,7 +1,7 @@
-body{
+/* body{
     width: 100vw;
     height: 100vh;
-}
+} */
 .parent{
     /* height: 40px */
     max-width: 500px
@@ -36,4 +36,9 @@ body{
 #remove-taskText{
     border-radius: 0 2rem 2rem 0;
     padding-right: 10px;
+}
+
+/* footer */
+footer{
+    text-align: center;
 }
