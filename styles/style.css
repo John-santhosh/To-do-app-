@@ -1,10 +1,15 @@
-/* body{
-    width: 100vw;
-    height: 100vh;
-} */
+body{
+    /* width: 100vw;
+    height: 100vh; */
+    background: #F9DBBB;
+}
+h1{
+    background: #4E6E81;
+}
 .parent{
     /* height: 40px */
-    max-width: 500px
+    max-width: 500px;
+    background: #4E6E81;
 }
 .parent >*{
     margin: 1rem auto;
