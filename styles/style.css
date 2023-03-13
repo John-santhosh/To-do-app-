@@ -1,49 +1,66 @@
-body{
-    /* width: 100vw;
+body {
+  /* width: 100vw;
     height: 100vh; */
-    background: #F9DBBB;
+  background: #f9dbbb;
 }
-h1{
-    background: #4E6E81;
+h1 {
+  background: #4e6e81;
 }
-.parent{
-    /* height: 40px */
-    max-width: 500px;
-    background: #4E6E81;
+.parent {
+  /* height: 40px */
+  max-width: 500px;
+  background: #4e6e81;
+  position: relative;
+  /* height: 100vh; */
+  height: 80vh;
 }
-.parent >*{
-    margin: 1rem auto;
-}
-
-.base >*{
-    padding: 0;
-    background: #fff;
-    outline: transparent;
-    border: none;
+.parent > * {
+  /* margin: 1rem auto; */
 }
 
-#parent-input{
-    padding: 1rem !important;
-    border-radius: 2rem 0 0 2rem;
-}
-.base{
-    border-radius: 2rem;
-    overflow: hidden;
-}
-.child>*{
-    background: inherit;
-    outline: transparent;
-    border: none;
-    font-size: 1.3rem;
-    color: #000000;
-    border-bottom: 1px solid black;
-}
-#remove-taskText{
-    border-radius: 0 2rem 2rem 0;
-    padding-right: 10px;
+.base > * {
+  padding: 0;
+  background: #fff;
+  outline: transparent;
+  border: none;
 }
 
+#parent-input {
+  padding: 1rem !important;
+  border-radius: 2rem 0 0 2rem;
+}
+.base {
+  border-radius: 2rem;
+  overflow: hidden;
+  height: 55px;
+}
+.child > * {
+  background: inherit;
+  outline: transparent;
+  border: none;
+  font-size: 1.3rem;
+  color: #000000;
+  border-bottom: 1px solid black;
+}
+#remove-taskText {
+  border-radius: 0 2rem 2rem 0;
+  padding-right: 10px;
+}
+
+/* new note */
+.newNote {
+  /* width: 100%; */
+  /* display: inline-block; */
+  position: absolute;
+  /* top: 0; */
+  /* insert: 0 0; */
+  right: 20px;
+  bottom: 20px;
+  width: auto;
+  height: 3rem;
+  border-radius: 50%;
+}
 /* footer */
-footer{
-    text-align: center;
+footer {
+  text-align: center;
 }
