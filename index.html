@@ -21,27 +21,30 @@
   </head>
   <body class="text-capitalize">
     <section class=" ">
-      <h1 class="text-center text-uppercase mb-5">Add to do list</h1>
+      <h1 class="text-center text-uppercase mb-5">to do list</h1>
       <div class="container">
-        <div class="parent row m-auto justify-content-center">
+        <div class="parent row m-auto align-content-start gap-5">
           <!-- <label for="">name</label> -->
-          <div class="base row">
+          <div class="base row gap-3 justify-content-between m-0">
             <input
               id="parent-input"
-              class="col-10"
+              class="col-9"
               type="text"
               value=""
-              placeholder="Add task..."
+              placeholder="Add Task..."
             />
-            <button id="task-add" class="col-1">➕</button>
-            <button id="remove-taskText" class="col-1">❌</button>
+            <button id="task-add" class="col-2">
+              <img src="img/plus.png" alt="" />
+            </button>
+            <!-- <button id="remove-taskText" class="col-1">❌</button> -->
           </div>
-          <button type="button" class="newNote">➕</button>
+          <div class="children"></div>
+          <!-- <button type="button" class="newNote">➕</button> -->
         </div>
       </div>
     </section>
 
-    <section>
+    <!-- <section>
       <div class="container">
         <div>
           <input type="text" placeholder="Title" />
@@ -52,9 +55,9 @@
           <input type="text" placeholder="Start Typing" />
         </div>
       </div>
-    </section>
+    </section> -->
     <footer>
-      <p>Copyright &copy;</p>
+      <p class="m-0">Copyright &copy;</p>
     </footer>
     <!-- bootstrap js cdn  -->
     <script

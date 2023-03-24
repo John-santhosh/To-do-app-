@@ -1,8 +1,8 @@
 // Accessing elements
 
 let addBtn = document.querySelector("#task-add");
-let removeText = document.querySelector("#remove-taskText");
-let parent = document.querySelector(".parent");
+// let removeText = document.querySelector("#remove-taskText");
+let parent = document.querySelector(".children");
 let task = document.querySelector("#parent-input");
 
 let deleteIcon = document.querySelector("#deleteTask");
@@ -11,7 +11,7 @@ let deleteIcon = document.querySelector("#deleteTask");
 addBtn.addEventListener("click", preChecking);
 
 // removing text from the input field
-removeText.addEventListener("click", clearParentText);
+// removeText.addEventListener("click", clearParentText);
 function clearParentText() {
   task.value = "";
 }
@@ -23,6 +23,14 @@ function preChecking() {
 
 // creating the task
 function createTask() {
+  // let createdChild = `<div class="child row">
+  //           <input class="col-10" disabled="">
+  //           <button class="col-1 d-none">✔️</button>
+  //           <button class="col-1" id="editTask">✏️</button>
+  //           <button class="col-1" id="deleteTask">🗑️</button>
+  //         </div>`;
+  // parent.innerHTML = createdChild;
+  // return;
   // creating elements
   let div = document.createElement("div");
   let input = document.createElement("input");
@@ -32,6 +40,7 @@ function createTask() {
 
   // adding attributes and textContent to the newly created elements
   div.classList.add("child");
+  div.classList.add("row");
 
   input.classList.add("col-10");
   input.value = task.value;
