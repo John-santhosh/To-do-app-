@@ -1,8 +1,3 @@
-body {
-  /* width: 100vw;
-    height: 100vh; */
-  /* background: #f9dbbb; */
-}
 h1 {
   background: #4e6e81;
   color: #fff;
@@ -10,14 +5,10 @@ h1 {
 }
 .parent {
   width: clamp(350px, 100%, 700px);
-  /* background: #4e6e81; */
-  height: 100vh;
+  min-height: 100vh;
 }
 input {
   border: 2px solid #4e6e81;
-}
-.parent > * {
-  /* margin: 1rem auto; */
 }
 
 .base > * {
@@ -27,29 +18,29 @@ input {
 }
 
 #parent-input {
-  padding: 1rem;
+  padding-left: 1rem;
   background-color: #4e6e8131;
   border-radius: 1rem;
 }
 #task-add {
   border-radius: 1rem;
   background-color: #4e6e81;
-  color: #fff;
   border: transparent;
 }
 img {
   width: 35px;
 }
 .base {
-  height: 120px;
-  padding: 2rem;
+  height: 80px;
+  padding: 1rem;
   background-color: rgb(255, 255, 255);
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   border-radius: 1rem;
 }
-.children {
+
+.children:has(.child) {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  padding: 2rem;
+  padding: 1rem;
   border-radius: 1rem;
 }
 .child > * {
@@ -68,10 +59,18 @@ img {
   background-color: #7c96a512;
   border-radius: 10px;
   border: 2px solid #4e6e81;
-  /* padding-left: ; */
 }
 .child input:first-child {
   flex: 10 7 100px;
+}
+
+.children img {
+  width: 50%;
+  /* margin: auto; */
+}
+.img-container {
+  text-align: center;
+  /* margin: auto; */
 }
 #remove-taskText {
   padding-right: 10px;
@@ -81,4 +80,6 @@ img {
 footer {
   text-align: center;
   background-color: #4e6e81;
+  color: #fff;
+  padding: 1rem;
 }
